@@ -1,1 +1,6 @@
 #Create a local swarm, the Char virtual machine should be its manager.
+
+docker swarm init --advertise-addr 
+
+#work on 
+#dont know what to finish the advertise-addr with

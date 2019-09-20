@@ -4,3 +4,11 @@
 #service. You can try to access lair on your machine via a web browser, with the
 #IP address of the virtual machine as a URL.
 #Congratulations, you just deployed a functional Wordpress website in two commands!
+
+docker run -d --name lair -p 8080:80 --link spawning-pool:mysql wordpress 
+
+#--link links containers 
+#docker inspect lair | grep '"IPAddress"' | head -n 1
+
+#work on
+#couldnt get the ip as a url

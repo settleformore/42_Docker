@@ -3,3 +3,9 @@
 #course, make sure before that the package manager and the packages already in the
 #container are updated). For this exercise, you should only specify the commands
 #to be run directly in the container.
+
+#docker run -it --rm debian
+
+apt update && apt upgrade -y
+apt install git -y 
+apt install gcc -y
