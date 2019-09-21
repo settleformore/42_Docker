@@ -8,6 +8,13 @@
 #virtual machine on the 3000 port.
 #You will also list all the necessary commands in your repository.
 
-docker run --name Abathur -p 3000:3000
+
+
+
+docker container run --name Abathur -p 3000:3000 Python
+
+
+
+
 
 #work on

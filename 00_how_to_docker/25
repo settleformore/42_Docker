@@ -1,4 +1,3 @@
 #List all the services of the local swarm
 
-
-#work on
+docker service ls
