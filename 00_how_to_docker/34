@@ -1,5 +1,6 @@
+#--Ex:--
 #Delete the Aiur virtual machine without using rm -rf.
 
 docker-machine rm -y Aiur
 
-#work on: test after
+#test after

@@ -1,7 +1,8 @@
+#--Ex:--
 #Force quit and delete all the containers (whatever their status), in one command.
 
 docker rm --force $(docker container ls -aq)
 
-
+#--Notes--
 #-aq is all quiet which only shows the container ids
-#maybe right? work on after everything else is done
+#test

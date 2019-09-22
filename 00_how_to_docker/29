@@ -1,6 +1,6 @@
+#--Ex:--
 #Display all the tasks of the marines service
 
+docker serivce ps marines
 
-
-
-#work on
+#test

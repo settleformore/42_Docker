@@ -1,3 +1,4 @@
+#--Ex:--
 #Launch a container name Abathur. It will be a Python container, 2-slim version,
 #its /root folder will be bound to a HOME folder on your host, and its 3000 port
 #will be bound to the 3000 port of your virtual machine.
@@ -9,12 +10,15 @@
 #You will also list all the necessary commands in your repository.
 
 
-
-
-docker container run --name Abathur -p 3000:3000 Python
-
-
-
-
-
-#work on
+docker run -dt --name Abathur -p 3000:3000 \
+--mount type=bind,source=$HOME,target=/root python:2-slim
+echo 'from flask import Flask
+app = Flask(__name__)
+@app.route("/")
+def hello():
+    return "<h1>Hello World!</h1>"
+if __name__ == "__main__":
+    app.run()' > ~/hello.py
+docker exec Abathur pip install flask
+docker exec -e FLASK_RUN_PORT=3000 -e FLASK_RUN_HOST=0.0.0.0 \
+-e FLASK_APP=/root/hello.py Abathur flask run

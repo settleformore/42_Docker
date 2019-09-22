@@ -1,7 +1,7 @@
+#--Ex:--
 #Create an overlay-type internal network that you will name overmind
 
-docker network create --internal overmind
+docker network create -d overlay --internal overmind
 
-
-#overlay network drivers create a distributed network among multiple Docker daemon hosts
-#Ask Sam or Git? work on
+#--Notes--
+# overlay network drivers create a distributed network among multiple Docker daemon hosts

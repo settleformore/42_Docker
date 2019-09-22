@@ -1,6 +1,7 @@
+#--Ex:--
 #Delete all the container images stored on the Char virtual machine, in one command
 #as well.
 
 docker image rm $(docker image ls -aq)
 
-#work on: test ater after all creation problems are done
+#test ater after all creation problems are done

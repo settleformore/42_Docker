@@ -1,3 +1,4 @@
+#--Ex:--
 #Launch a shell from an alpine container, and make sure that you can interact
 #directly with the container via your terminal, and that the container deletes itself
 #once the shell’s execution is done.
@@ -5,5 +6,5 @@
 
 docker run -it --rm alpine 
 
-
+#--Notes--
 #alpine container is a linus distrubtion built around the musl libc and BusyBox

@@ -1,7 +1,8 @@
+#--Ex:--
 #Launch a 42school/engineering-bay service in two replicas and make sure that
 #the service works properly (see the documentation provided at hub.docker.com).
 #This service will be named engineering-bay and will be on the overmind network
 
-docker service create --name engineering-bay --replicas 2 --network overmind 42school/engineering-bay
+docker service create --replicas 2 --name engineering-bay --network overmind 42school/engineering-bay
 
 #work on: Ask Sam
