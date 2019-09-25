@@ -7,7 +7,8 @@
 #overmind network.
 
 
+docker service create
 
 
-
-#work on
+# https://hub.docker.com/r/42school/engineering-bay
+#work on, never finished

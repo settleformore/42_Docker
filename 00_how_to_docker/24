@@ -6,6 +6,3 @@
 
 docker service create --name orbital-command -e RABBITMQ_DEFAULT_PASS=lolitsME \
 -e RABBITMQ_DEFAULT_USER=me --network overmind rabbitmq
-
-
-#test when you know how to get it working

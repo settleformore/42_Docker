@@ -3,7 +3,7 @@
 #never enough Marines to eliminate Zergs. (Remember to take a look at the tasks
 #and logs of the service, you’ll see, it’s fun.)
 
+docker service scale marines=20
 
 
-
-#work on
+#test

@@ -10,5 +10,17 @@ ENV TS3SERVER_LICENSEPATH=accept
 
 WORKDIR home/teamspeak
 
+
+# docker run \
+#   -d \
+#   --name ts3 \
+#   -p 9987:9987/udp \
+#   -p 10011:10011 \
+#   -p 30033:30033 \
+#   --volumes-from ts3-data \
+#   polinux/teamspeak
+
 #--Notes--
 # Teamspeak is a voice communcation software for online services. Used for business and personal services
+
+#test

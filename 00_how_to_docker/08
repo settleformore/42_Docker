@@ -8,3 +8,4 @@ docker run -it --rm alpine
 
 #--Notes--
 #alpine container is a linus distrubtion built around the musl libc and BusyBox
+#exit to leave

@@ -1,4 +1,6 @@
 #--Ex:--
 #Look up the spawning-pool container’s logs in real time without running its shell
 
-docker logs -f spawning-pool
+docker logs spawning-pool
+
+# using -f creates sstream o that you can continusally view the logs
