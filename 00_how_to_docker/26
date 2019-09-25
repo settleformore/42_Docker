@@ -3,7 +3,6 @@
 #the service works properly (see the documentation provided at hub.docker.com).
 #This service will be named engineering-bay and will be on the overmind network
 
-docker service create -d --network overmind --name engineering-bay --replicas 2 -e OC_USERNAME= OC_PASSWORD= 42school/engineering-bay
+docker service create -d --network overmind --name engineering-bay --replicas 2 -e OC_USERNAME=ME -e OC_PASSWD=lolitsME 42school/engineering-bay
 
-#work on: Ask Sam
 #the sit they are refering to is https://hub.docker.com/r/42school/engineering-bay

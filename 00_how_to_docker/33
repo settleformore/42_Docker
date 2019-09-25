@@ -3,5 +3,3 @@
 #as well.
 
 docker image rm $(docker image ls -aq)
-
-#test ater after all creation problems are done

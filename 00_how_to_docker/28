@@ -7,8 +7,7 @@
 #overmind network.
 
 
-docker service create
+docker service create -d --network overmind --name marines --replicas 2 -e OC_USERNAME=me -e OC_PASSWD=lolitsME 42school/marine-squad
 
 
 # https://hub.docker.com/r/42school/engineering-bay
-#work on, never finished

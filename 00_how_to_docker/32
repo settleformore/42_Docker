@@ -5,4 +5,3 @@ docker rm -f $(docker ps -a -q)
 
 #--Notes--
 #-aq is all quiet which only shows the container ids
-#test
