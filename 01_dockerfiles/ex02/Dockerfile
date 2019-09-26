@@ -10,6 +10,9 @@
 #launch the rails server (see example below). If you don’t know what commands to use,
 #it’s high time to look at the Ruby on Rails documentation.
 
+
+#this recieves all the rails compontents it needs by getting it from ft-rails:on-build, and we expose the 3000 port 
+# s is for server
 FROM ft-rails:on-build
 EXPOSE 3000
 CMD ["rails", "s", "-b", "0.0.0.0", "-p", "3000"]
