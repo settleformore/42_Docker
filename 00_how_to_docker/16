@@ -3,4 +3,4 @@
 
 docker logs spawning-pool
 
-# using -f creates sstream o that you can continusally view the logs
+# using -f creates stream so that you can continusally view the logs

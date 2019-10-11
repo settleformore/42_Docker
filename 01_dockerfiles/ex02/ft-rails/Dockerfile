@@ -9,14 +9,17 @@
 
 FROM ruby:2.5.1
 
-RUN apt-get update -y && apt-get upgrade -y && apt-get install -y \
-	nodejs && \
-	gem install rails && \
-	gem install bundler
-RUN rails new app
-# ONBUILD RUN cp myapp /opt/app
-ONBUILD RUN cd app && bundle install && \
-			rake db:migrate && \
-			rake db:setup
-WORKDIR	/opt/app
+RUN apt-get update && apt-get upgrade -y nodejs && \
+    gem install rails && \
+	gem install bundler && \
+    gem install nodejs-rails && \
+    gem update --system
+
+ONBUILD WORKDIR /opt
+
+ONBUILD ADD app /opt/app
+ONBUILD WORKDIR /opt/app
+ONBUILD RUN bundle install
+ONBUILD RUN rake db:migrate
+ONBUILD RUN rake db:seed
 

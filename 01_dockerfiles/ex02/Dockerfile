@@ -13,6 +13,11 @@
 
 #this recieves all the rails compontents it needs by getting it from ft-rails:on-build, and we expose the 3000 port 
 # s is for server
+
+# docker build -t ex02 .
+
+# How to run it?
+# docker run -it --rm -p 3000:3000 ex02
 FROM ft-rails:on-build
 EXPOSE 3000
-CMD ["rails", "s", "-b", "0.0.0.0", "-p", "3000"]
+CMD rails s -b 0.0.0.0 -p 3000
