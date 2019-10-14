@@ -11,6 +11,5 @@ ENTRYPOINT printf '\e[93m' \
     && printf '\e[0m' && sleep 3 && exit
 
 
-
-# docker build ex01 .
+# docker build -t ex01 .
 # docker run ex01
