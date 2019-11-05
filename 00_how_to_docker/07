@@ -2,4 +2,4 @@
 #Get the internal IP address of the overlord container without starting its shell and
 #in one command.
 
-docker inspect --format='{{range .NetworkSettings.Networks}}{{.MacAddress}}{{end}}' overlord
+docker inspect --format='{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' overlord
