@@ -1,5 +1,5 @@
 # 42_Docker
-Holy Docker Batman!!
+Holy Docker Batman!! A project that teaches the uses and commands of Docker machines, imags, containers, swarms and volumes.
 
 ## About This Project
 
